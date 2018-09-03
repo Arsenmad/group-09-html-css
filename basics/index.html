@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <section class="vocab">
+    <h2>Словарь</h2>
+    <ul>
+      <li><strong>Родитель</strong> &mdash; тот элемент, в который вложен текущий,
+        первая вложенность</li>
+      <li><strong>Ребенок</strong> &mdash; все элементы первой вложенности внутри
+        текущего элемента</li>
+      <li><strong>Предок</strong> &mdash; все элементы стоящие выше родителя по цепочке
+        вложенности
+      </li>
+      <li><strong>Потомок</strong> &mdash; все элементы лежащие по цепочке ниже первого
+        уровня вложенности </li>
+      <li><strong>Flex-контейнер</strong> &mdash; элемент с свойством display установленным
+        в flex или inline-flex</li>
+      <li><strong>Flex-элемент</strong> &mdash; все дети flex-контейнера</li>
+      <li><strong>Flex-ось</strong> &mdash; направляющая flex-геометрии, есть главная
+        и поперечная</li>
+    </ul>
+  </section>
+
+  <div class="flex-container">
+    <div class="flex-element">Flex element 1</div>
+    <div class="flex-element">Flex element 2</div>
+    <div class="flex-element">Flex element 3</div>
+    <div class="flex-element">Flex element 4</div>
+  </div>
+</body>
+
+</html>
