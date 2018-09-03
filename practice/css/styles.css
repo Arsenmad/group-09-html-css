@@ -10,7 +10,6 @@ html {
 
 body {
   margin: 0;
-  /* https://www.bennadel.com/blog/3391-margin-collapsing-causes-unexpected-scrollbar-with-100vh-body-in-webkit.htm */
   min-height: 100vh;
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
