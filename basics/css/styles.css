@@ -10,53 +10,42 @@ html {
 
 body {
   margin: 0;
+  padding: 50px;
   min-height: 100vh;
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
   color: #212121;
 }
 
-.flex-container {
-  height: 500px;
-  display: flex;
-  align-items: flex-start;
-  padding: 32px;
-  background-color: #212121;
+.parent {
+  width: 240px;
+  padding: 20px;
+  background-color: #2a2a2a;
 }
 
-.flex-element {
-  flex-grow: 1;
-  padding: 24px;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 24px;
-  color: #ffffff;
-}
-
-.flex-element:nth-child(1) {
+.box {
+  width: 200px;
+  height: 200px;
   background-color: #2196f3;
+  animation: grow 2s linear 0s infinite forwards;
 }
 
-.flex-element:nth-child(2) {
-  align-self: flex-end;
-  background-color: #e91e63;
+.box.is-paused {
+  animation-play-state: paused;
 }
 
-.flex-element:nth-child(3) {
-  align-self: center;
-  background-color: #009688;
-}
+/* ANIMATIONS */
 
-.flex-element:nth-child(4) {
-  background-color: #ff5722;
-}
+@keyframes grow {
+  0% {
+    width: 200px;
+  }
 
-/* Helpers */
+  50% {
+    width: 300px;
+  }
 
-.vocab h2 {
-  font-weight: 500;
-}
-
-.vocab strong {
-  font-weight: 500;
+  100% {
+    width: 600px;
+  }
 }
