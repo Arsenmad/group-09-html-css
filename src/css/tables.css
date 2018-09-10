@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  padding: 4px 8px;
+  border: 1px solid #212121;
+}
+
+.table th {
+  background-color: #212121;
+  color: #ffffff;
+  border-color: #ffffff;
+}
