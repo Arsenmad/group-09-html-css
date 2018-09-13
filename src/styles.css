@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 400px;
+  border: 1px solid #212121;
+}
+
+.signup-form input {
+  padding: 4px 8px;
+  color: #212121;
+}
+
+.signup-form input::placeholder {
+  color: palevioletred;
+}
+
+.signup-form textarea {
+  resize: none;
+  width: 100%;
+}
+
+.signup-form > .section {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters input[type='checkbox']:checked {
+  /* width: 30px;
+  height: 30px; */
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.info input {
+  border: none;
+  border-bottom: 1px solid #212121;
+  color: red;
+  flex-grow: 1;
+  outline: 0;
+}
+
+.info input:invalid {
+  border-color: red;
+}
+
+.info input:valid {
+  border-color: green;
+}
+
+.info input:required {
+  /* можно показать иконку обязательно к заполнению */
+}
