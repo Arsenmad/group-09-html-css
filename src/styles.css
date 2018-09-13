@@ -87,3 +87,30 @@ button {
 .info input:required {
   /* можно показать иконку обязательно к заполнению */
 }
+
+.section:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #2196f3;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: #ff4081;
+}
