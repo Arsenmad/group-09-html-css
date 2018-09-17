@@ -1,0 +1,31 @@
+:root {
+  --color-white: #ffffff;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  background-color: var(--color-white);
+}
+
+.container {
+  min-width: 32rem;
+  max-width: 117rem;
+}
+
+/* 1em = 16px */
+@media (min-width: 31.25em) {
+  body {
+    background-color: teal;
+  }
+}
+
+@media (min-width: 48em) {
+  body {
+    background-color: palevioletred;
+  }
+}

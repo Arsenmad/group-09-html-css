@@ -1,0 +1,21 @@
+body {
+  background-image: url('https://placeimg.com/640/480/animals');
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('https://placeimg.com/640/480/nature');
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    background-image: url('https://placeimg.com/640/480/tech');
+  }
+}
+
+/* https://placeimg.com/640/480/animals */
+
+/* https://placeimg.com/640/480/nature */
+
+/* https://placeimg.com/640/480/tech */
