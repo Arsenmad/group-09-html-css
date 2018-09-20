@@ -20,9 +20,8 @@ body {
 }
 
 .container {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
-  /* padding: 0 10px; */
   background-color: teal;
 }
 
@@ -55,14 +54,14 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 748px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .item {
-    flex-basis: 364px;
+    flex-basis: 354px;
   }
 }
 
@@ -74,7 +73,7 @@ body {
 
 @media (min-width: 1170px) {
   .container {
-    width: 1170px;
+    width: 1150px;
   }
 
   .item:not(:nth-last-child(-n + 3)) {
