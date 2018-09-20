@@ -21,9 +21,25 @@ body {
 .article {
 }
 
-.box {
+.background-box {
   width: 300px;
   height: 300px;
   margin: 0 auto;
   outline: 1px solid #212121;
+  background-image: url('https://placeimg.com/300/300/animals');
+  background-size: cover;
+}
+
+/* X2 */
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .background-box {
+    background-image: url('https://placeimg.com/600/600/tech');
+  }
+}
+
+/* X3 */
+@media (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .background-box {
+    background-image: url('https://placeimg.com/900/900/nature');
+  }
 }
