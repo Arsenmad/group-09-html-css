@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::afer {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.team {
+  background-color: orange;
+}
+
+.section .title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.partners {
+  background-color: #ccc;
+}
+
+.about {
+  background-color: teal;
+}
+
+.partners .title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.partners .list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list .item p {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+/* MEDIA */
+@media (max-width: 699px) {
+  .partners .list .item:not(:last-child) {
+    margin-bottom: 29px;
+  }
+}
+
+@media (min-width: 700px) {
+  .partners .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .partners .list .item {
+    flex-basis: 236px;
+  }
+
+  .container {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 959px) {
+  .partners .list .item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 59px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 940px;
+  }
+
+  .partners .list {
+    justify-content: space-between;
+  }
+
+  .partners .list .item {
+    flex-basis: 220px;
+    flex-grow: 0;
+  }
+
+  .partners .list .item:not(:nth-last-child(-n + 4)) {
+    margin-bottom: 59px;
+  }
+}
