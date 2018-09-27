@@ -1,0 +1,14 @@
+body {
+  display: grid;
+  transition: all 200ms linear;
+  transform: translate(20px, 30px);
+
+  /* background-color: orange; */
+  color: #212121;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
