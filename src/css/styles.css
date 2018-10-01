@@ -1,14 +1,58 @@
-body {
-  display: grid;
-  transition: all 200ms linear;
-  transform: translate(20px, 30px);
+html {
+  box-sizing: border-box;
+}
 
-  /* background-color: orange; */
-  color: #212121;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin: 0 4px;
+  font-family: Roboto, sans-serif;
+  border: 1px solid #212121;
+  color: #212121;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.button .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  transition: transform 200ms linear;
+  fill: #212121;
+}
+
+.button:hover {
+  color: palevioletred;
+  border-color: palevioletred;
+}
+
+.button:hover .icon {
+  transform: scale(1.2);
+  fill: palevioletred;
 }
