@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BEM</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+  <header class="masthead">
+    <div class="container masthead__container">
+      <a class="logo" href="">
+        <img class="logo__image" src="https://placeimg.com/60/60/tech" alt=""
+             width="60" height="60">
+      </a>
+
+      <ul class="page-nav">
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#about">About</a></li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#team">Team</a></li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#feedback">Feedback</a></li>
+        <li class="page-nav__item">
+          <a class="page-nav__link" href="#work">Our work</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="section section--color-purple" id="about">
+      <div class="container">
+        <h2 class="section__title">Get to know us</h2>
+
+        <ul class="about-list">
+          <li class="about-list__item">
+            <h3>About title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea,
+              voluptatem vero corporis itaque beatae sed sequi eligendi omnis
+              doloribus quisquam dolor quas quae ab. Repellat optio id
+              dignissimos ea?</p>
+          </li>
+          <li class="about-list__item">
+            <h3>About title 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea,
+              voluptatem vero corporis itaque beatae sed sequi eligendi omnis
+              doloribus quisquam dolor quas quae ab. Repellat optio id
+              dignissimos ea?</p>
+          </li>
+          <li class="about-list__item">
+            <h3>About title 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ea,
+              voluptatem vero corporis itaque beatae sed sequi eligendi omnis
+              doloribus quisquam dolor quas quae ab. Repellat optio id
+              dignissimos ea?</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--color-cyan" id="team">
+      <div class="container">
+        <h2 class="section__title">Meet our team</h2>
+
+        <div class="slider">
+          <button class="slider__button">
+            <img src="https://image.flaticon.com/icons/png/512/657/657001.png"
+                 alt="" width="20" height="20">
+          </button>
+
+          <ul class="slider__content">
+            <li class="slider__item">
+              <div class="team-member-card">
+                <img class="team-member-card__image" src="https://placeimg.com/640/480/animals"
+                     alt="">
+                <p class="team-member-card__name">Christopher Dalu</p>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="team-member-card">
+                <img class="team-member-card__image" src="https://placeimg.com/640/480/animals"
+                     alt="">
+                <p class="team-member-card__name">Christopher Dalu</p>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="team-member-card">
+                <img class="team-member-card__image" src="https://placeimg.com/640/480/animals"
+                     alt="">
+                <p class="team-member-card__name">Christopher Dalu</p>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="team-member-card">
+                <img class="team-member-card__image" src="https://placeimg.com/640/480/animals"
+                     alt="">
+                <p class="team-member-card__name">Christopher Dalu</p>
+              </div>
+            </li>
+          </ul>
+
+          <button class="slider__button">
+            <img src="https://image.flaticon.com/icons/svg/32/32213.svg" alt=""
+                 width="20" height="20">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--color-amber" id="feedback">
+      <div class="container">
+        <h2 class="section__title">We are open to feedback</h2>
+
+        <div class="section__body section__body--horizontal">
+          <section class="feedback-post section__item">
+            <h3 class="feedback-post__title">Hello there friend</h3>
+            <p class="feedback-post__text">Lorem ipsum dolor sit amet
+              consectetur
+              adipisicing elit. Ratione dolorem eveniet molestiae voluptatem
+              consequatur exercitationem consequuntur esse officia? Nesciunt
+              eveniet expedita vero sapiente ea impedit officiis ducimus rem,
+              voluptas repellat harum voluptate necessitatibus blanditiis
+              pariatur delectus explicabo. Quas aut blanditiis aliquid optio
+              sunt, quisquam debitis inventore illo ab eius. Mollitia?</p>
+          </section>
+
+          <form class="form form--vertical section__item">
+            <input type="text" class="form__input">
+            <textarea rows="8" class="form__input"></textarea>
+            <button class="button button--primary button--wide">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- <button class="button">Base</button>
+
+  <button class="button button--primary button--wide">
+    <svg class="button__icon">
+      <use href="img/icons.svg#login"></use>
+    </svg>
+    Login
+  </button>
+
+  <button class="button button--warning">
+    <svg class="button__icon">
+      <use href="img/icons.svg#logout"></use>
+    </svg>
+    Logout
+  </button>
+
+  <button class="button button--disabled">
+    <svg class="button__icon">
+      <use href="img/icons.svg#register"></use>
+    </svg>
+    Register
+  </button> -->
+</body>
+
+</html>
