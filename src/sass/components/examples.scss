@@ -1,0 +1,14 @@
+.cool-el {
+  color: rgba(#2196f3, 0.5);
+  flex-basis: calc(33.3333% - 10px);
+}
+
+.box-1 {
+  @include size(100px, 200px);
+  @include font-settings(20px, 500, 1.5);
+}
+
+.box-2 {
+  @include size(300px, 400px);
+  @include font-settings(10px, 700, 1.3);
+}

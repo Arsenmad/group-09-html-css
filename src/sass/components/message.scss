@@ -1,0 +1,17 @@
+.message-warning {
+  @extend %message;
+
+  background-color: $color-warning;
+}
+
+.message-error {
+  @extend %message;
+
+  background-color: $color-error;
+}
+
+.message-success {
+  @extend %message;
+
+  background-color: $color-success;
+}

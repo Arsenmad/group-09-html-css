@@ -1,0 +1,47 @@
+$color-primary-light: #fff;
+$color-primary-dark: #212121;
+$color-warning: #ffc107;
+$color-error: #ff5252;
+$color-success: #2196f3;
+$font-stack: Roboto, Arial, sans-serif;
+
+// Цвета
+$colors: (
+  'light': #fff,
+  'dark': #212121,
+  'warning': #ffc107,
+  'error': #ff5252,
+  'success': #2196f3
+);
+
+@function get-color($name) {
+  @return map-get($colors, $name);
+}
+
+// Брейкпоинты
+
+// Начальный вавриант
+// $breakpoint-mobile: 576px;
+
+// @media (min-width: $breakpoint-mobile) {
+// }
+
+$breakpoints: (
+  'mobile': (
+    min-width: 576px
+  ),
+  'tablet': (
+    min-width: 576px
+  ),
+  'desktop': (
+    min-width: 576px
+  )
+);
+
+@function get-breakpoint($name) {
+  @return map-get($breakpoints, $name);
+}
+
+// @media #{get-breakpoint('mobile')} {
+//   background: red;
+// }
